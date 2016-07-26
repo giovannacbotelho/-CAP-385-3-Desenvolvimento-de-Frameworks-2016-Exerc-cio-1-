@@ -1,7 +1,5 @@
 package org.cbsoft.framework;
 
-import java.io.IOException;
-
 public class Crypto implements PostProcessor {
 
 	private int delay;
