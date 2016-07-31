@@ -1,5 +1,6 @@
 package org.cbsoft.framework;
 
+import org.cbsoft.application.Uppercase;
 
 public class Product{
 	
@@ -15,6 +16,7 @@ public class Product{
 		this.price = price;
 		this.code = code;
 	}
+	@Uppercase
 	public String getName() {
 		return name;
 	}
@@ -27,12 +29,14 @@ public class Product{
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
+	@Prefix("R$")
 	public double getPrice() {
 		return price;
 	}
 	public void setPrice(double price) {
 		this.price = price;
 	}
+	@Prefix("NR#")
 	public String getCode() {
 		return code;
 	}
